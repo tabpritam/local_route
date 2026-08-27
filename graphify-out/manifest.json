@@ -1,0 +1,52 @@
+{
+  "go.mod": {
+    "mtime": 1787858443.651423,
+    "ast_hash": "e138ee5e1b0474d7ff94d6a4b99e70de",
+    "semantic_hash": "e138ee5e1b0474d7ff94d6a4b99e70de"
+  },
+  "internal/cli/doctor.go": {
+    "mtime": 1787855548.6001625,
+    "ast_hash": "100edab9e824b302bb7ef497980d0693",
+    "semantic_hash": "100edab9e824b302bb7ef497980d0693"
+  },
+  "internal/cli/root.go": {
+    "mtime": 1787860452.663194,
+    "ast_hash": "f58d06b6f6694b41f84b1b60ba34e53f",
+    "semantic_hash": "f58d06b6f6694b41f84b1b60ba34e53f"
+  },
+  "internal/hostname/mdns.go": {
+    "mtime": 1787858467.817979,
+    "ast_hash": "ccde98707fff8d1f8e941ed26971b879",
+    "semantic_hash": "ccde98707fff8d1f8e941ed26971b879"
+  },
+  "internal/network/ip.go": {
+    "mtime": 1787856000.5964344,
+    "ast_hash": "15a895f8d5288ee6a57537d6dc08e9a8",
+    "semantic_hash": "15a895f8d5288ee6a57537d6dc08e9a8"
+  },
+  "internal/network/port.go": {
+    "mtime": 1787855969.8874097,
+    "ast_hash": "432b3fced04fc15a4b4ca9ff59723e4b",
+    "semantic_hash": "432b3fced04fc15a4b4ca9ff59723e4b"
+  },
+  "internal/process/signals.go": {
+    "mtime": 1787858042.921867,
+    "ast_hash": "d1d95949684981a52e42eb755507ada8",
+    "semantic_hash": "d1d95949684981a52e42eb755507ada8"
+  },
+  "internal/proxy/proxy.go": {
+    "mtime": 1787858264.8163178,
+    "ast_hash": "60161e2b7126d85e656d1fbd7efd8f38",
+    "semantic_hash": "60161e2b7126d85e656d1fbd7efd8f38"
+  },
+  "internal/tunnel/cloudflare.go": {
+    "mtime": 1787859306.9330533,
+    "ast_hash": "063d968ca7b0aebfc71ed8114e67d28c",
+    "semantic_hash": "063d968ca7b0aebfc71ed8114e67d28c"
+  },
+  "README.md": {
+    "mtime": 1787860789.7897112,
+    "ast_hash": "f16403068bbc6634acd5e6376a743981",
+    "semantic_hash": "f16403068bbc6634acd5e6376a743981"
+  }
+}
