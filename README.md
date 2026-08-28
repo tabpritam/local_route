@@ -2,6 +2,8 @@
 
 🌐 **[Download Now](https://tabpritam.github.io/local_route/)**
 
+<a href="https://buymeacoffee.com/tabpritam" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 145px !important;" ></a>
+
 RouteLocal is a zero-configuration, cross-platform CLI tool that makes it incredibly simple to share your local development server across your network or the public internet.
 
 ## Can Layman Users Run This? (No Setup Required!)
