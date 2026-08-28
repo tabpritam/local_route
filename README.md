@@ -48,6 +48,22 @@ At any time, you can run the application without any flags to see the visual qui
 **Windows**: `.\routelocal.exe`
 **Mac**: `./routelocal`
 
+## Uninstalling
+
+RouteLocal includes a built-in self-cleanup command that safely removes the executable from your system.
+
+**Windows**:
+```powershell
+.\routelocal.exe uninstall
+```
+*(If you installed it globally in a protected system folder, you may need to run your terminal as Administrator).*
+
+**macOS / Linux**:
+```bash
+./routelocal uninstall
+```
+*(If you installed it globally in a folder like `/usr/local/bin`, you will need to run `sudo routelocal uninstall` to grant deletion permissions).*
+
 ---
 
 ## Compiling Release Binaries (For Developers)

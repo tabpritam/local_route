@@ -1,0 +1,132 @@
+{
+  "communities": {
+    "0": [
+      "cancelfunc",
+      "cmd",
+      "internal_tunnel_cloudflare",
+      "internal_tunnel_cloudflare_ensurecloudflared",
+      "internal_tunnel_cloudflare_start",
+      "tunnel_cloudflaretunnel",
+      "tunnel_cloudflaretunnel_stop"
+    ],
+    "1": [
+      "internal_proxy_proxy",
+      "internal_proxy_proxy_newserver",
+      "proxy_server",
+      "proxy_server_start",
+      "proxy_server_stop"
+    ],
+    "2": [
+      "hostname_broadcaster",
+      "hostname_broadcaster_stop",
+      "internal_hostname_mdns",
+      "internal_hostname_mdns_start"
+    ],
+    "3": [
+      "internal_cli_root",
+      "internal_cli_root_execute",
+      "internal_cli_root_init",
+      "internal_cli_root_printlogo"
+    ],
+    "4": [
+      "internal_cli_doctor",
+      "internal_cli_doctor_init"
+    ],
+    "5": [
+      "internal_network_ip",
+      "internal_network_ip_getlocalip"
+    ],
+    "6": [
+      "internal_network_port",
+      "internal_network_port_isportactive"
+    ],
+    "7": [
+      "internal_process_signals",
+      "internal_process_signals_waitforinterrupt"
+    ],
+    "8": [
+      "pkg_routelocal"
+    ]
+  },
+  "cohesion": {
+    "0": 0.38095238095238093,
+    "1": 0.5,
+    "2": 0.6666666666666666,
+    "3": 0.5,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0
+  },
+  "gods": [
+    {
+      "id": "tunnel_cloudflaretunnel",
+      "label": "CloudflareTunnel",
+      "degree": 5
+    },
+    {
+      "id": "proxy_server",
+      "label": "Server",
+      "degree": 5
+    },
+    {
+      "id": "hostname_broadcaster",
+      "label": "Broadcaster",
+      "degree": 4
+    },
+    {
+      "id": "internal_hostname_mdns_start",
+      "label": "Start()",
+      "degree": 3
+    },
+    {
+      "id": "internal_tunnel_cloudflare_start",
+      "label": "Start()",
+      "degree": 3
+    },
+    {
+      "id": "internal_proxy_proxy_newserver",
+      "label": "NewServer()",
+      "degree": 3
+    },
+    {
+      "id": "internal_tunnel_cloudflare_ensurecloudflared",
+      "label": "ensureCloudflared()",
+      "degree": 2
+    },
+    {
+      "id": "pkg_routelocal",
+      "label": "routelocal",
+      "degree": 0
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Start()",
+      "target": "NewServer()",
+      "source_files": [
+        "internal/hostname/mdns.go",
+        "internal/proxy/proxy.go"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "Broadcaster",
+      "target": "Server",
+      "source_files": [
+        "internal/hostname/mdns.go",
+        "internal/proxy/proxy.go"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

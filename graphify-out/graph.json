@@ -11,9 +11,9 @@
       "source_file": "go.mod",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "pkg_routelocal",
       "community": 8,
-      "norm_label": "routelocal"
+      "norm_label": "routelocal",
+      "id": "pkg_routelocal"
     },
     {
       "label": "doctor.go",
@@ -21,9 +21,9 @@
       "source_file": "internal/cli/doctor.go",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "internal_cli_doctor",
       "community": 4,
-      "norm_label": "doctor.go"
+      "norm_label": "doctor.go",
+      "id": "internal_cli_doctor"
     },
     {
       "label": "init()",
@@ -31,9 +31,159 @@
       "source_file": "internal/cli/doctor.go",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "internal_cli_doctor_init",
       "community": 4,
-      "norm_label": "init()"
+      "norm_label": "init()",
+      "id": "internal_cli_doctor_init"
+    },
+    {
+      "label": "mdns.go",
+      "file_type": "code",
+      "source_file": "internal/hostname/mdns.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "mdns.go",
+      "id": "internal_hostname_mdns"
+    },
+    {
+      "label": "Broadcaster",
+      "file_type": "code",
+      "source_file": "internal/hostname/mdns.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "broadcaster",
+      "id": "hostname_broadcaster"
+    },
+    {
+      "label": "Start()",
+      "file_type": "code",
+      "source_file": "internal/hostname/mdns.go",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": "start()",
+      "id": "internal_hostname_mdns_start"
+    },
+    {
+      "label": ".Stop()",
+      "file_type": "code",
+      "source_file": "internal/hostname/mdns.go",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 2,
+      "norm_label": ".stop()",
+      "id": "hostname_broadcaster_stop"
+    },
+    {
+      "label": "ip.go",
+      "file_type": "code",
+      "source_file": "internal/network/ip.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "ip.go",
+      "id": "internal_network_ip"
+    },
+    {
+      "label": "GetLocalIP()",
+      "file_type": "code",
+      "source_file": "internal/network/ip.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 5,
+      "norm_label": "getlocalip()",
+      "id": "internal_network_ip_getlocalip"
+    },
+    {
+      "label": "signals.go",
+      "file_type": "code",
+      "source_file": "internal/process/signals.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "signals.go",
+      "id": "internal_process_signals"
+    },
+    {
+      "label": "WaitForInterrupt()",
+      "file_type": "code",
+      "source_file": "internal/process/signals.go",
+      "source_location": "L10",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "waitforinterrupt()",
+      "id": "internal_process_signals_waitforinterrupt"
+    },
+    {
+      "label": "cloudflare.go",
+      "file_type": "code",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "cloudflare.go",
+      "id": "internal_tunnel_cloudflare"
+    },
+    {
+      "label": "CloudflareTunnel",
+      "file_type": "code",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "cloudflaretunnel",
+      "id": "tunnel_cloudflaretunnel"
+    },
+    {
+      "label": "Cmd",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "cmd",
+      "id": "cmd"
+    },
+    {
+      "label": "CancelFunc",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "cancelfunc",
+      "id": "cancelfunc"
+    },
+    {
+      "label": "ensureCloudflared()",
+      "file_type": "code",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L22",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "ensurecloudflared()",
+      "id": "internal_tunnel_cloudflare_ensurecloudflared"
+    },
+    {
+      "label": "Start()",
+      "file_type": "code",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L86",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "start()",
+      "id": "internal_tunnel_cloudflare_start"
+    },
+    {
+      "label": ".Stop()",
+      "file_type": "code",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L143",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": ".stop()",
+      "id": "tunnel_cloudflaretunnel_stop"
     },
     {
       "label": "root.go",
@@ -76,66 +226,6 @@
       "norm_label": "init()"
     },
     {
-      "label": "mdns.go",
-      "file_type": "code",
-      "source_file": "internal/hostname/mdns.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "internal_hostname_mdns",
-      "community": 2,
-      "norm_label": "mdns.go"
-    },
-    {
-      "label": "Broadcaster",
-      "file_type": "code",
-      "source_file": "internal/hostname/mdns.go",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "hostname_broadcaster",
-      "community": 2,
-      "norm_label": "broadcaster"
-    },
-    {
-      "label": "Start()",
-      "file_type": "code",
-      "source_file": "internal/hostname/mdns.go",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "internal_hostname_mdns_start",
-      "community": 2,
-      "norm_label": "start()"
-    },
-    {
-      "label": ".Stop()",
-      "file_type": "code",
-      "source_file": "internal/hostname/mdns.go",
-      "source_location": "L38",
-      "_origin": "ast",
-      "id": "hostname_broadcaster_stop",
-      "community": 2,
-      "norm_label": ".stop()"
-    },
-    {
-      "label": "ip.go",
-      "file_type": "code",
-      "source_file": "internal/network/ip.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "internal_network_ip",
-      "community": 5,
-      "norm_label": "ip.go"
-    },
-    {
-      "label": "GetLocalIP()",
-      "file_type": "code",
-      "source_file": "internal/network/ip.go",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "internal_network_ip_getlocalip",
-      "community": 5,
-      "norm_label": "getlocalip()"
-    },
-    {
       "label": "port.go",
       "file_type": "code",
       "source_file": "internal/network/port.go",
@@ -154,26 +244,6 @@
       "id": "internal_network_port_isportactive",
       "community": 6,
       "norm_label": "isportactive()"
-    },
-    {
-      "label": "signals.go",
-      "file_type": "code",
-      "source_file": "internal/process/signals.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "internal_process_signals",
-      "community": 7,
-      "norm_label": "signals.go"
-    },
-    {
-      "label": "WaitForInterrupt()",
-      "file_type": "code",
-      "source_file": "internal/process/signals.go",
-      "source_location": "L10",
-      "_origin": "ast",
-      "id": "internal_process_signals_waitforinterrupt",
-      "community": 7,
-      "norm_label": "waitforinterrupt()"
     },
     {
       "label": "proxy.go",
@@ -224,76 +294,6 @@
       "id": "proxy_server_stop",
       "community": 1,
       "norm_label": ".stop()"
-    },
-    {
-      "label": "cloudflare.go",
-      "file_type": "code",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "internal_tunnel_cloudflare",
-      "community": 0,
-      "norm_label": "cloudflare.go"
-    },
-    {
-      "label": "CloudflareTunnel",
-      "file_type": "code",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "tunnel_cloudflaretunnel",
-      "community": 0,
-      "norm_label": "cloudflaretunnel"
-    },
-    {
-      "label": "Cmd",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "cmd",
-      "community": 0,
-      "norm_label": "cmd"
-    },
-    {
-      "label": "CancelFunc",
-      "file_type": "code",
-      "source_file": "",
-      "source_location": "",
-      "_origin": "ast",
-      "id": "cancelfunc",
-      "community": 0,
-      "norm_label": "cancelfunc"
-    },
-    {
-      "label": "ensureCloudflared()",
-      "file_type": "code",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "internal_tunnel_cloudflare_ensurecloudflared",
-      "community": 0,
-      "norm_label": "ensurecloudflared()"
-    },
-    {
-      "label": "Start()",
-      "file_type": "code",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L86",
-      "_origin": "ast",
-      "id": "internal_tunnel_cloudflare_start",
-      "community": 0,
-      "norm_label": "start()"
-    },
-    {
-      "label": ".Stop()",
-      "file_type": "code",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L143",
-      "_origin": "ast",
-      "id": "tunnel_cloudflaretunnel_stop",
-      "community": 0,
-      "norm_label": ".stop()"
     }
   ],
   "links": [
@@ -304,42 +304,9 @@
       "source_location": "L23",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "internal_cli_doctor",
-      "target": "internal_cli_doctor_init",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/cli/root.go",
-      "source_location": "L145",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "internal_cli_root",
-      "target": "internal_cli_root_execute",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/cli/root.go",
-      "source_location": "L155",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "internal_cli_root",
-      "target": "internal_cli_root_init",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/cli/root.go",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "internal_cli_root",
-      "target": "internal_cli_root_printlogo",
-      "confidence_score": 1.0
+      "target": "internal_cli_doctor_init"
     },
     {
       "relation": "contains",
@@ -348,9 +315,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "internal_hostname_mdns",
-      "target": "hostname_broadcaster",
-      "confidence_score": 1.0
+      "target": "hostname_broadcaster"
     },
     {
       "relation": "contains",
@@ -359,9 +326,9 @@
       "source_location": "L15",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "internal_hostname_mdns",
-      "target": "internal_hostname_mdns_start",
-      "confidence_score": 1.0
+      "target": "internal_hostname_mdns_start"
     },
     {
       "relation": "method",
@@ -370,9 +337,9 @@
       "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "hostname_broadcaster",
-      "target": "hostname_broadcaster_stop",
-      "confidence_score": 1.0
+      "target": "hostname_broadcaster_stop"
     },
     {
       "relation": "references",
@@ -382,9 +349,9 @@
       "weight": 1.0,
       "context": "field",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "hostname_broadcaster",
-      "target": "proxy_server",
-      "confidence_score": 1.0
+      "target": "proxy_server"
     },
     {
       "relation": "references",
@@ -394,9 +361,9 @@
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "internal_hostname_mdns_start",
-      "target": "hostname_broadcaster",
-      "confidence_score": 1.0
+      "target": "hostname_broadcaster"
     },
     {
       "relation": "calls",
@@ -417,20 +384,9 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "internal_network_ip",
-      "target": "internal_network_ip_getlocalip",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/network/port.go",
-      "source_location": "L10",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "internal_network_port",
-      "target": "internal_network_port_isportactive",
-      "confidence_score": 1.0
+      "target": "internal_network_ip_getlocalip"
     },
     {
       "relation": "contains",
@@ -439,8 +395,140 @@
       "source_location": "L10",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "internal_process_signals",
-      "target": "internal_process_signals_waitforinterrupt",
+      "target": "internal_process_signals_waitforinterrupt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "internal_tunnel_cloudflare",
+      "target": "internal_tunnel_cloudflare_ensurecloudflared"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "internal_tunnel_cloudflare",
+      "target": "internal_tunnel_cloudflare_start"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "internal_tunnel_cloudflare",
+      "target": "tunnel_cloudflaretunnel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L86",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "internal_tunnel_cloudflare_start",
+      "target": "tunnel_cloudflaretunnel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L19",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tunnel_cloudflaretunnel",
+      "target": "cancelfunc"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L18",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tunnel_cloudflaretunnel",
+      "target": "cmd"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "tunnel_cloudflaretunnel",
+      "target": "tunnel_cloudflaretunnel_stop"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/tunnel/cloudflare.go",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "internal_tunnel_cloudflare_start",
+      "target": "internal_tunnel_cloudflare_ensurecloudflared"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/cli/root.go",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "internal_cli_root",
+      "target": "internal_cli_root_execute",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/cli/root.go",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "internal_cli_root",
+      "target": "internal_cli_root_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/cli/root.go",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "internal_cli_root",
+      "target": "internal_cli_root_printlogo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/network/port.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "internal_network_port",
+      "target": "internal_network_port_isportactive",
       "confidence_score": 1.0
     },
     {
@@ -449,7 +537,6 @@
       "source_file": "internal/proxy/proxy.go",
       "source_location": "L20",
       "weight": 1.0,
-      "_origin": "ast",
       "source": "internal_proxy_proxy",
       "target": "internal_proxy_proxy_newserver",
       "confidence_score": 1.0
@@ -460,7 +547,6 @@
       "source_file": "internal/proxy/proxy.go",
       "source_location": "L13",
       "weight": 1.0,
-      "_origin": "ast",
       "source": "internal_proxy_proxy",
       "target": "proxy_server",
       "confidence_score": 1.0
@@ -472,7 +558,6 @@
       "source_location": "L20",
       "weight": 1.0,
       "context": "return_type",
-      "_origin": "ast",
       "source": "internal_proxy_proxy_newserver",
       "target": "proxy_server",
       "confidence_score": 1.0
@@ -483,7 +568,6 @@
       "source_file": "internal/proxy/proxy.go",
       "source_location": "L28",
       "weight": 1.0,
-      "_origin": "ast",
       "source": "proxy_server",
       "target": "proxy_server_start",
       "confidence_score": 1.0
@@ -494,104 +578,11 @@
       "source_file": "internal/proxy/proxy.go",
       "source_location": "L69",
       "weight": 1.0,
-      "_origin": "ast",
       "source": "proxy_server",
       "target": "proxy_server_stop",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L22",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "internal_tunnel_cloudflare",
-      "target": "internal_tunnel_cloudflare_ensurecloudflared",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L86",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "internal_tunnel_cloudflare",
-      "target": "internal_tunnel_cloudflare_start",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "internal_tunnel_cloudflare",
-      "target": "tunnel_cloudflaretunnel",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L86",
-      "weight": 1.0,
-      "context": "return_type",
-      "_origin": "ast",
-      "source": "internal_tunnel_cloudflare_start",
-      "target": "tunnel_cloudflaretunnel",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L19",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "source": "tunnel_cloudflaretunnel",
-      "target": "cancelfunc",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L18",
-      "weight": 1.0,
-      "context": "field",
-      "_origin": "ast",
-      "source": "tunnel_cloudflaretunnel",
-      "target": "cmd",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L143",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "tunnel_cloudflaretunnel",
-      "target": "tunnel_cloudflaretunnel_stop",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "internal/tunnel/cloudflare.go",
-      "source_location": "L87",
-      "weight": 1.0,
-      "_origin": "ast",
-      "source": "internal_tunnel_cloudflare_start",
-      "target": "internal_tunnel_cloudflare_ensurecloudflared",
       "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ac731118793dd8c8916e0e7a36319db5fbaab627"
+  "built_at_commit": "4ac162d8af9172021dfea409013b63820e654603"
 }

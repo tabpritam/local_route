@@ -26,7 +26,7 @@ func NewServer(targetPort int, listenPort int) *Server {
 
 // Start runs the proxy in the background and sends errors to errChan. Returns the actual bound port.
 func (s *Server) Start(errChan chan<- error) (int, error) {
-	targetURL, _ := url.Parse(fmt.Sprintf("http://127.0.0.1:%d", s.targetPort))
+	targetURL, _ := url.Parse(fmt.Sprintf("http://localhost:%d", s.targetPort))
 	
 	// Go's built-in ReverseProxy automatically supports WebSockets (Connection Upgrade)
 	// and Server-Sent Events (SSE) streaming!

@@ -161,4 +161,33 @@ func init() {
 	rootCmd.Flags().BoolVar(&public, "public", false, "Expose the application to the public internet via Cloudflare Tunnel")
 	rootCmd.Flags().StringVarP(&name, "name", "n", "", "Custom local hostname (e.g., myapp -> myapp.local)")
 	rootCmd.Flags().BoolVar(&debug, "debug", false, "Enable verbose debugging output")
+
+	// Add uninstall subcommand
+	rootCmd.AddCommand(uninstallCmd)
+}
+
+var uninstallCmd = &cobra.Command{
+	Use:   "uninstall",
+	Short: "Uninstall RouteLocal from your system",
+	Run: func(cmd *cobra.Command, args []string) {
+		exePath, err := os.Executable()
+		if err != nil {
+			fmt.Printf("✗ Error finding executable path: %v\n", err)
+			os.Exit(1)
+		}
+
+		fmt.Printf("Uninstalling RouteLocal from: %s\n", exePath)
+		err = os.Remove(exePath)
+		if err != nil {
+			if os.IsPermission(err) {
+				fmt.Println("✗ Error: Permission denied.")
+				fmt.Println("  You need administrator privileges to uninstall globally installed commands.")
+				fmt.Println("  Please run: sudo routelocal uninstall")
+			} else {
+				fmt.Printf("✗ Error removing executable: %v\n", err)
+			}
+			os.Exit(1)
+		}
+		fmt.Println("✓ RouteLocal has been successfully uninstalled.")
+	},
 }
