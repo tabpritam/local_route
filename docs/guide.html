@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide & Docs - RouteLocal</title>
+    <script>
+        const savedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text-main: #111827;
+            --text-muted: #6b7280;
+            --border: #e5e7eb;
+            --primary: #000000;
+            --primary-hover: #374151;
+            --accent: #2563eb;
+        }
+        [data-theme="dark"] {
+            --bg: #111827;
+            --text-main: #f9fafb;
+            --text-muted: #9ca3af;
+            --border: #374151;
+            --primary: #f9fafb;
+            --primary-hover: #e5e7eb;
+        
+            --code-bg: #1f2937;
+        }
+        .theme-toggle {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            margin-left: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: background 0.2s, color 0.2s;
+        }
+        .theme-toggle:hover {
+            background: var(--border);
+            color: var(--text-main);
+        }
+        .theme-toggle svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-main);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 3rem auto 6rem;
+            padding: 0 5%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        code {
+            background-color: var(--code-bg, #f3f4f6);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 0.9em;
+            color: #ef4444;
+        }
+
+        .code-block-wrapper {
+            position: relative;
+            margin-bottom: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .code-block {
+            background: #1e1e1e;
+            color: #f8f8f2;
+            padding: 1.25rem;
+            border-radius: 8px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 0.95rem;
+            overflow-x: auto;
+            margin: 0;
+            display: block;
+        }
+
+        .code-block code {
+            background: transparent;
+            color: inherit;
+            padding: 0;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border-radius: 4px;
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .copy-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">RouteLocal</a>
+        <div class="nav-links" style="display: flex; align-items: center;">
+            <a href="guide.html">Guide</a>
+            <a href="https://buymeacoffee.com/tabpritam" target="_blank">
+                <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+                    style="height: 35px; border-radius: 8px;">
+            </a>
+            <a href="https://github.com/tabpritam/local_route" target="_blank">GitHub</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Guide & Documentation</h1>
+
+        <h2>Usage Guide (macOS)</h2>
+        <p>Once you have downloaded and installed the <code>.pkg</code> file for macOS, <code>routelocal</code> will be
+            automatically available in your terminal path.</p>
+        <p>1. Open the Terminal application.</p>
+        <p>2. Run the command to expose your local port (replace 3000 with your port):</p>
+        <div class="code-block-wrapper">
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            <pre class="code-block"><code class="code-content">routelocal --port 3000 --name myapp</code></pre>
+        </div>
+
+        <h2>Usage Guide (Windows)</h2>
+        <p>After downloading the Windows executable (<code>routelocal-windows.exe</code>):</p>
+        <p>1. It's recommended to rename the file to <code>routelocal.exe</code> and add its folder to your system's
+            PATH variable, or simply run it from the downloaded folder.</p>
+        <p>2. Open Command Prompt or PowerShell.</p>
+        <p>3. Navigate to the folder containing the executable (or just run it if it's in your PATH):</p>
+        <div class="code-block-wrapper">
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            <pre class="code-block"><code class="code-content">.\routelocal.exe --port 3000 --name myapp</code></pre>
+        </div>
+
+        <h2>Commands Guide</h2>
+        <p>Use the following sample commands to get the most out of RouteLocal. Click <strong>Copy</strong> to easily
+            paste them into your terminal.</p>
+
+        <h3>Expose to Local Network & mDNS</h3>
+        <p>This exposes your local port so it's accessible via your local IP address and an mDNS hostname (e.g.
+            <code>myapp.local</code>).</p>
+        <div class="code-block-wrapper">
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            <pre class="code-block"><code class="code-content">routelocal --port 5173 --name myapp</code></pre>
+        </div>
+
+        <h3>Expose to Public Internet</h3>
+        <p>Use the <code>--public</code> flag to generate a secure Cloudflare tunnel URL accessible anywhere in the
+            world.</p>
+        <div class="code-block-wrapper">
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            <pre class="code-block"><code class="code-content">routelocal --port 5173 --name myapp --public</code></pre>
+        </div>
+
+        <h2>Uninstalling Guide</h2>
+
+        <h3>macOS</h3>
+        <p>To uninstall RouteLocal from macOS, remove the executable from your bin directory. Run the following command
+            in your Terminal:</p>
+        <div class="code-block-wrapper">
+            <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            <pre class="code-block"><code class="code-content">sudo rm /usr/local/bin/routelocal</code></pre>
+        </div>
+
+        <h3>Windows</h3>
+        <p>To uninstall from Windows, simply delete the <code>routelocal-windows.exe</code> (or
+            <code>routelocal.exe</code>) file from your computer. If you added its folder to your PATH variable, you can
+            remove it from your Environment Variables settings.</p>
+    </div>
+
+    <script>
+        function copyCode(button) {
+            const codeContent = button.parentElement.querySelector('.code-content').innerText;
+            navigator.clipboard.writeText(codeContent).then(() => {
+                const originalText = button.innerText;
+                button.innerText = 'Copied!';
+                button.style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
+                setTimeout(() => {
+                    button.innerText = originalText;
+                    button.style.backgroundColor = '';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('theme-toggle');
+            const sunIcon = document.getElementById('sun-icon');
+            const moonIcon = document.getElementById('moon-icon');
+            
+            const updateIcons = (theme) => {
+                if (theme === 'dark') {
+                    sunIcon.style.display = 'block';
+                    moonIcon.style.display = 'none';
+                } else {
+                    sunIcon.style.display = 'none';
+                    moonIcon.style.display = 'block';
+                }
+            };
+            
+            updateIcons(document.documentElement.getAttribute('data-theme'));
+            
+            themeToggle.addEventListener('click', () => {
+                let theme = document.documentElement.getAttribute('data-theme');
+                let newTheme = theme === 'dark' ? 'light' : 'dark';
+                
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateIcons(newTheme);
+            });
+        });
+    </script>
+</body>
+
+</html>
