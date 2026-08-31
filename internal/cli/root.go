@@ -152,7 +152,10 @@ const customUsageTemplate = `Usage:
 Examples:{{.Example}}
 `
 
+var Version = "dev"
+
 func init() {
+	rootCmd.Version = Version
 	rootCmd.SetUsageTemplate(customUsageTemplate)
 	rootCmd.CompletionOptions.DisableDefaultCmd = true
 

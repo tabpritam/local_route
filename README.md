@@ -24,49 +24,57 @@ When you run RouteLocal, it performs the following steps instantly:
 
 ---
 
-## Usage Guide (Windows)
+## Install on macOS & Linux
 
-1. Open **PowerShell** or **Command Prompt** in the folder where you saved `routelocal.exe`.
-2. Ensure your development app is running on its port (e.g., `3000`).
+The easiest way to install RouteLocal is using our automated installation script. It will detect your OS (macOS/Linux) and architecture (Apple Silicon/Intel) and securely install the latest version.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/tabpritam/local_route/main/install.sh | bash
+```
+
+### Check version
+
+```bash
+routelocal --version
+```
+
+### Update
+
+To update to the latest release, simply run the installation command again. It will safely replace your existing installation.
+
+### Uninstall
+
+RouteLocal includes a clean uninstaller:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/tabpritam/local_route/main/uninstall.sh | bash
+```
+*(Or you can use the built-in `routelocal uninstall` command).*
+
+---
+
+## Manual Installation (Windows & Alternate macOS/Linux)
+
+You can download the standalone executable manually if you prefer not to use the installation script.
+
+### Windows
+
+1. Download the latest `routelocal-windows-amd64.exe` from the [Releases page](https://github.com/tabpritam/local_route/releases/latest).
+2. Open **PowerShell** or **Command Prompt** in the folder where you saved it.
 3. Run the following command:
    ```powershell
-   .\routelocal.exe --port 3000 --name myapp --public
+   .\routelocal-windows-amd64.exe --port 3000 --name myapp --public
    ```
-4. *Note: If a Windows Defender Firewall popup appears the first time you run it, click "Allow access" to ensure devices on your Wi-Fi are permitted to connect.*
+*(Note: If a Windows Defender Firewall popup appears the first time you run it, click "Allow access" to ensure devices on your Wi-Fi are permitted to connect).*
 
-## Usage Guide (macOS / Linux)
+### macOS / Linux
 
-1. Open **Terminal** in the folder where you saved the `routelocal` binary.
-2. Ensure your development app is running on its port.
-3. macOS/Linux requires downloaded binaries to have execute permissions. You only need to run this command once:
-   ```bash
-   chmod +x ./routelocal
-   ```
-4. Run the application:
-   ```bash
-   ./routelocal --port 3000 --name myapp --public
-   ```
+Download the correct binary for your system from the [Releases page](https://github.com/tabpritam/local_route/releases/latest), then grant it execute permissions:
 
-## Getting Help
-At any time, you can run the application without any flags to see the visual quick reference guide!
-**Windows**: `.\routelocal.exe`
-**Mac**: `./routelocal`
-
-## Uninstalling
-
-RouteLocal includes a built-in self-cleanup command that safely removes the executable from your system.
-
-**Windows**:
-```powershell
-.\routelocal.exe uninstall
-```
-*(If you installed it globally in a protected system folder, you may need to run your terminal as Administrator).*
-
-**macOS / Linux**:
 ```bash
-./routelocal uninstall
+chmod +x ./routelocal-darwin-arm64
+./routelocal-darwin-arm64 --port 3000 --name myapp --public
 ```
-*(If you installed it globally in a folder like `/usr/local/bin`, you will need to run `sudo routelocal uninstall` to grant deletion permissions).*
 
 ---
 
