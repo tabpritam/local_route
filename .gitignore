@@ -10,8 +10,8 @@ go.work
 go.work.sum
 
 # Ignore built RouteLocal binaries
-routelocal
-routelocal.exe
+/routelocal
+/routelocal.exe
 routelocal-windows*
 routelocal-mac*
 routelocal-linux*
